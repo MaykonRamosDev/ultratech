@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  background-image: url("/UltraTech.jpg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  width: 100%;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(11, 17, 32, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #38bdf8;
+  letter-spacing: 3px;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: #e2e8f0;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #38bdf8;
+}
+
+.hero {
+  min-height: 90vh;
+  padding: 60px 8%;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 40px;
+  background: rgba(11, 23, 48, 0.78);
+}
+
+.hero-texto h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-texto p {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.hero-botoes {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 22px;
+  border-radius: 10px;
+  font-weight: bold;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+.btn-primary:hover {
+  background-color: #0ea5e9;
+}
+
+.btn-secondary {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.btn-secondary:hover {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+.hero-card {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 30px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(4px);
+}
+
+.hero-card h3 {
+  color: #38bdf8;
+  margin-bottom: 8px;
+  margin-top: 15px;
+}
+
+.hero-card h3:first-child {
+  margin-top: 0;
+}
+
+.hero-card p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.servicos,
+.sobre,
+.contato {
+  padding: 80px 8%;
+}
+
+.servicos {
+  background-color: rgba(17, 24, 39, 0.82);
+}
+
+.sobre {
+  background-color: rgba(15, 23, 42, 0.82);
+}
+
+.contato {
+  background-color: rgba(17, 24, 39, 0.82);
+}
+
+.servicos h2,
+.sobre h2,
+.contato h2 {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.secao-descricao {
+  text-align: center;
+  color: #cbd5e1;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: rgba(51, 65, 85, 0.92);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid rgba(56, 189, 248, 0.15);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
+}
+
+.card h3 {
+  color: #38bdf8;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.sobre-box {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sobre-box p {
+  color: #cbd5e1;
+  line-height: 1.8;
+  margin-top: 16px;
+}
+
+.contato-container {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-contato input,
+.form-contato textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: #e2e8f0;
+  color: #0f172a;
+}
+
+.info-contato {
+  background-color: rgba(30, 41, 59, 0.95);
+  padding: 25px;
+  border-radius: 16px;
+  border: 1px solid rgba(56, 189, 248, 0.15);
+}
+
+.info-contato h3 {
+  color: #38bdf8;
+  margin-bottom: 16px;
+}
+
+.info-contato p {
+  color: #cbd5e1;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.instagran-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 12px;
+  background-color: #22c55e;
+  color: white;
+  padding: 15px 18px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.instagran-btn:hover {
+  background-color: #16a34a;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #22c55e;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background-color: #16a34a;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(11, 17, 32, 0.95);
+  color: #94a3b8;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 992px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contato-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-texto h1 {
+    font-size: 2.2rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .servicos,
+  .sobre,
+  .contato,
+  .hero {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
