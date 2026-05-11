@@ -1,0 +1,7 @@
+package br.com.ultratech.backend.repository;
+
+import br.com.ultratech.backend.entity.Contato;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ContatoRepository extends JpaRepository<Contato, Long> {
+}
